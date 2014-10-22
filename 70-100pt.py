@@ -1,4 +1,4 @@
-##########################################
+0##########################################
 #                                        #
 #             Draw a house!              #
 #                                        #
@@ -22,7 +22,16 @@ root = Tk()
 drawpad = Canvas(root, width=800,height=600, background='white')
 drawpad.grid(row=0, column=1)
 
+
 # Insert your code here to draw the house!
+Housebody = drawpad.create_rectangle(100,200,500,600, fill='red')
+line1 = drawpad.create_line(100, 200,300,0)
+line2 = drawpad.create_line(500, 200,300,0)
+door = drawpad.create_rectangle(200,400,300,600, fill ='brown')
+window1 = drawpad.create_rectangle(350,250,450,325, fill = 'blue')
+window2 = drawpad.create_rectangle(200,250,300,325, fill = 'blue')
+
+
 
 
 root.mainloop()
